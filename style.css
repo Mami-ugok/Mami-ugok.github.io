@@ -8,6 +8,28 @@ h1 {
   border-bottom: solid 1px #f67504;
 }
 
+ul {
+  list-style-type: none;
+}
+
 p {
   color: #663300;
+}
+
+img {
+  width: 40%;
+}
+
+.container {
+  display: flex;
+}
+
+footer {
+  background-color: #2b4162;
+  height: 50px;
+}
+
+footer > p {
+  color: #f67504;
+  text-align: center;
 }
