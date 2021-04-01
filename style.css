@@ -2,6 +2,10 @@ body {
   background-color: #f9eed3;
 }
 
+header {
+  background-color: #2b4162;
+}
+
 h1 {
   font-size: 170%;
   color: #663300;
@@ -26,10 +30,11 @@ img {
 
 footer {
   background-color: #2b4162;
-  height: 50px;
+  height: 40px;
 }
 
 footer > p {
   color: #f67504;
   text-align: center;
+  padding-top: 10px;
 }
