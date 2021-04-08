@@ -161,6 +161,8 @@ footer > p {
 /*携帯用*/
 @media(max-width:600px) {
 
+  header{width:100px}
+  
   .logo {
     width: 160px;
     margin-top: 15px;
