@@ -48,10 +48,6 @@ h1 {
   margin-left: 10px;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .solo {
   width: 40%;
 }
@@ -138,13 +134,49 @@ p {
   color: #663300;
 }
 
-img {
-  width: 50%;
+.card li a {
+  display: block;
+  color: #111;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  transition: 0.2s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-.container {
+.card li a:hover {
+  transform: translateY(-5px);
+}
+
+.card {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   margin: 50px 10px; 
+  /* width: 700px; */
+  list-style: none;
+}
+
+.card li {
+  width: 40%;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0 20px 20px;
+  font-size: 14px;
+  color: #663300;
+}
+
+.card p {
+  margin: 0;
+  padding: 20px 20px 5px;
+  font-size: 10px;
 }
 
 footer {
@@ -161,12 +193,19 @@ footer > p {
 /*携帯用*/
 @media(max-width:600px) {
 
-  header{width:100px}
-  
+  .page-header {
+    width: 100%
+  }
+
+  .main-nav {
+    font-size: 1.5px;
+    margin-right: 10px;
+  }
+
   .logo {
     width: 160px;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 
   .about {
@@ -178,21 +217,19 @@ footer > p {
     width: 80%;
   }
 
-  .profile {
-    margin-top: 10px;
-  }
-
   .btn01 {
     margin-bottom: 50px;
   }
 
-  .container {
+  .card {
     flex-direction: column;
     align-items: center;
+    margin-left: auto;;
   }
 
-  .container img {
+  .card li {
     width: 80%;
+    margin-bottom: 30px;
   }
 
 }
